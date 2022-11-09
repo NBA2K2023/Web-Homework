@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* 初始化 取消内外边距 */
+             margin:10px; 
+             padding:10px;
+            /* 100%窗口高度  */
+            height:100vh;
+            /* 渐变背景 */
+            background-color:pink;
+        }
+        #box1{
+            z-index: -1;
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+             background-color:blue;
+             height:20px;
+             padding:20px;
+            }
+        div{
+            transition: width 2s,height 2s,transform 2s;}
+        div:hover
+        {
+           width:200px;
+           height: 200px;
+           transform: rotate(180deg);
+        }
+        
+        #box2{
+             top:50%;
+             left:50%;
+             transform:translate(-50%,-50%);
+             background-color:red;
+             height:20px;
+             padding:20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>
