@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业10</title>
+</head>
+<body>
+    <div id="start">
+        <input id="SUN" type="text">
+        <button id="copy" onclick="copy()">复制</button>
+        <input id="a" type="text"><br />
+        <span id="b" style="color:deeppink;"></span>
+    </div>
+</body>
+<script>
+    function copy() {
+        var sun = document.getElementById("SUN").value;
+        document.getElementById("a").value = sun;
+        document.getElementById("b").innerHTML = "复制成功";
+    }
+</script>
+</html>
